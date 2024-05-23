@@ -1,6 +1,4 @@
-package Examen;
-
-public class ExamenED {
+public class Transpuesta {
     
         static final int N=4;
     
@@ -19,15 +17,15 @@ public class ExamenED {
                 	{4, 4, 4, 4}};
  
         int B[][] = new int[N][N], i, j;
-        System.out.println("Transpuesta de una matriz:\n");
+        System.out.println("***Transpuesta de una matriz***");
  
-        System.out.println("\nAntes de  Transponer:");
+        System.out.println("\nAntes de Transponer:\n");
  
         Mostrar(A);
  
         transpose(A, B);
  
-        System.out.println("\nDespués de  Transponer:");
+        System.out.println("\nDespués de Transponer:\n");
         Mostrar(B);
     }
  
