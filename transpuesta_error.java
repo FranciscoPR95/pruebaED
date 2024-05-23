@@ -1,31 +1,35 @@
+package Transpuesta;
+
+import java.util.Scanner;
+
 public class Transpuesta {
     
-        static final int N=1;
+        static final int N=4;
     
    
     static void transpose(int A[][], int B[][]) {
         int i, j;
-        for (i = 0; i < N; i++) //Elimino el = en i<=N
+        for (i = 0; i <= N; i++)
             for (j = 0; j < N; j++)
-                B[i][j] = A[j][i]; //Elimino +1 y -1 en A[j+1][i-1]
+                B[i][j] = A[j+1][i-1];
     }
  
     public static void main(String[] args) {
         int A[][] = {{1, 1, 1, 1},
-                	{2, 2, 2, 2},
-                	{3, 3, 3, 3},
-                	{4, 4, 4, 4}};
+                {2, 2, 2, 2},
+                {3, 3, 3, 3},
+                {4, 4, 4, 4}};
  
         int B[][] = new int[N][N], i, j;
-        System.out.println("***Transpuesta de una matriz***");
+        System.out.println("Transpuesta de una matriz:\n");
  
-        System.out.println("\nAntes de Transponer:\n");
+        System.out.println("\nAntes de  Transponer:");
  
         Mostrar(A);
  
         transpose(A, B);
  
-        System.out.println("\nDespués de Transponer:\n");
+        System.out.println("\nDespués de  Transponer:");
         Mostrar(B);
     }
  
@@ -33,12 +37,10 @@ public class Transpuesta {
         int i;
         int j;
         for (i = 0; i < N; i++) {
-            for (j = 0; j < N; j++) //Elimino el = en j<=N
+            for (j = 0; j <= N; j++)
                 System.out.print(b[i][j] + " ");
             System.out.print("\n");
         }
     }
 }
-
-//Francisco Portillo Rodriguez
 
