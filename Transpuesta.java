@@ -2,7 +2,7 @@ package Examen;
 
 public class ExamenED {
     
-        static final int N=4;
+        static final int N=1;
     
    
     static void transpose(int A[][], int B[][]) {
@@ -42,5 +42,5 @@ public class ExamenED {
     }
 }
 
-//David García Rodríguez
+//Francisco Portillo Rodriguez
 
